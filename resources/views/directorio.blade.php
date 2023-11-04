@@ -18,8 +18,8 @@
                 <div class="p-6">
 
                 <p>
-                    <a href="#" class="btn btn-primary">Agregar nuevo</a>
-                    <a href="#" class="btn btn-success">Buscar</a>
+                    <a href="{{ route('directorio.crear') }}" class="btn btn-primary">Agregar Nuevo</a>
+                    <a href="{{ route('directorio.buscar')}}" class="btn btn-success">Buscar</a>
                 </p>
 
                 <table class="table">

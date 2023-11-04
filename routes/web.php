@@ -23,17 +23,9 @@ Route::get('/directorio', function () {
     return view('directorio');
 });
 
-Route::get('/directorio', function () {
-    return view('directorio');
-});
+Route::get('/directorio/crear', [directorio::class, 'create'])->name('directorio.crear');
 
-Route::get('/crearEntrada', function () {
-    return view('directorio');
-});
-
-Route::get('/buscar', function () {
-    return view('directorio');
-});
+Route::get('/directorio/buscar', [DirectorioController::class, 'search'])->name('directorio.buscar');
 
 Route::get('/eliminar', function () {
     return view('directorio');
